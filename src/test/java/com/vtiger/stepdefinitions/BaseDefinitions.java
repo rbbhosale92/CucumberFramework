@@ -30,6 +30,7 @@ public class BaseDefinitions extends BaseTest {
 		
 		loginPage lp =new loginPage(driver);
 		lp.login(prop.getProperty("username"), prop.getProperty("password"));
+		System.out.println("Entered userid and password");
 	}
 
 	@Then("^user should be landed on home page$")
