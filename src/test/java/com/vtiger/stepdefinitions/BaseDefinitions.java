@@ -22,6 +22,7 @@ public class BaseDefinitions extends BaseTest {
 	@Given("^user should be on login page$")
 	public void user_should_be_on_login_page() throws Throwable {
 		launchApp();
+		System.out.println("Application launched");
 	}
 
 	@When("^user enters userid and password and click on login button$")
