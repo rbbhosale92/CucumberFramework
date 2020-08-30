@@ -23,6 +23,7 @@ public class BaseDefinitions extends BaseTest {
 	public void user_should_be_on_login_page() throws Throwable {
 		launchApp();
 		System.out.println("Application launched");
+		System.out.println("Application launched1");
 	}
 
 	@When("^user enters userid and password and click on login button$")
@@ -83,7 +84,7 @@ public class BaseDefinitions extends BaseTest {
 		//lp1.login(arg1, arg2);
 		driver.findElement(By.name("user_name")).sendKeys("admin");
 		driver.findElement(By.name("user_password")).sendKeys("admin");
-		driver.findElement(By.name("Login1")).click();
+		driver.findElement(By.name("Login")).click();
 	}
 
 }

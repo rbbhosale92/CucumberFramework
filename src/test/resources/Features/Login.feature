@@ -1,13 +1,13 @@
 Feature: Test Login functionality
 
-
+@sanity
 Scenario: Valid login
 Given user should be on login page
 When user enters userid and password and click on login button
 Then user should be landed on home page
 And close browser
 
-
+@smoke
 Scenario: E2E lead creation scenario
 Given user should be on login page
 When user enters userid and password and click on login button
@@ -30,8 +30,8 @@ And close browser
 Examples:
 |Userid | Password |
 |admin1 | admin1   |
-|admin2 | admin2   |
-|admin3 | admin3   |
+
+
 
 
 
