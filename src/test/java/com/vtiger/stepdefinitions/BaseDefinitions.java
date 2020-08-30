@@ -81,7 +81,7 @@ public class BaseDefinitions extends BaseTest {
 		//lp1.login(arg1, arg2);
 		driver.findElement(By.name("user_name")).sendKeys("admin");
 		driver.findElement(By.name("user_password")).sendKeys("admin");
-		driver.findElement(By.name("Login1")).click();
+		driver.findElement(By.name("Login")).click();
 	}
 
 }
